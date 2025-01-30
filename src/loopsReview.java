@@ -3,7 +3,7 @@ import java.util.Scanner;
 // homework calculate average and display to user
 // Then provide a letter grade based on ten point scale
 
-public class Grades {
+public class loopsReview {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double grade;
