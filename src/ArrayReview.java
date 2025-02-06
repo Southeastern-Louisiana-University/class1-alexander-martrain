@@ -6,7 +6,6 @@ public class ArrayReview {
     public static void main (String[] args) {
         double[] doubleArray;
         doubleArray = new double[10];
-//        System.out.println("Value of doubleArray[0] is " + doubleArray[0]);
 
         for (int i = 0; i < doubleArray.length; i++) {
             doubleArray[i] = i;
@@ -15,6 +14,8 @@ public class ArrayReview {
         printArray(doubleArray);
         sumArray(doubleArray);
     }
+
+
 
     public static void printArray(double[] anyArray) {
         // code in the function
