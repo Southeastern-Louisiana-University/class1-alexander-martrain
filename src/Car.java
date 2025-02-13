@@ -48,7 +48,6 @@ public class Car {
         Car myCar = new Car("Toyota", "Corolla", 2022);
         myCar.displayInfo();
 
-        // Modifying values using setter methods
         myCar.setMake("Honda");
         myCar.setModel("Civic");
         myCar.setYear(2024);
