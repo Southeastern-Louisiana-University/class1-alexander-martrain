@@ -40,20 +40,22 @@ public class Car {
         this.year = year;
     }
 
-    public void displayInfo() {
-        System.out.printf("displayInfo\nMake: %s\nModel: %s\nYear %d", make, model, year);
+    public String toString() {
+        return String.format("Make: %s, Model: %s, Year: %s", make, model, String.valueOf(year));
     }
 
     public static void main(String[] args) {
         Car myCar = new Car("Toyota", "Corolla", 2022);
-        myCar.displayInfo();
+        System.out.println("myCar:\n" + myCar.toString() + "\n--------");
 
         myCar.setMake("Honda");
         myCar.setModel("Civic");
         myCar.setYear(2024);
-        System.out.printf("\ngetters\ngetMake: %s\ngetModel: %s\ngetYear: %d", myCar.getMake(), myCar.getModel(), myCar.getYear());
+        System.out.println("Updated myCar via setters:\n" + myCar.toString() + "\n--------");
+//        System.out.printf("\ngetters\ngetMake: %s\ngetModel: %s\ngetYear: %d", myCar.getMake(), myCar.getModel(), myCar.getYear());
 
-        System.out.println("\nUpdated (via setters) Car Info:");
-        myCar.displayInfo();
+        Car carAlex = new Car("Chevrolet", "Malibu", 2020);
+        System.out.println("carAlex:\n" + carAlex.toString());
     }
+
 }
